@@ -5,7 +5,7 @@ import Link from "next/link";
 import pjxOne from '@/public/project1.jpg';
 import pjxTwo from '@/public/project6.jpg';
 import pjxThr from '@/public/project3.jpg';
-import { GoArrowUpRight, GoPlus } from "react-icons/go";
+import { GoArrowUpRight } from "react-icons/go";
 import { BsChevronRight } from "react-icons/bs";
 import { FaCss3Alt, FaGitAlt, FaGithub, FaHtml5, FaNodeJs, FaPhp, FaReact } from "react-icons/fa";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
@@ -244,36 +244,6 @@ export default function Home() {
               </div>
             </div>
           </div>
-          {/* <div className="w-full mt-5 grid grid-cols-1 md:grid-cols-3 gap-5">
-            <div className="border-green-500 border-l p-3">
-              <h1 className="uppercase">Frontend Development</h1>
-              <div className="flex gap-5 mt-3">
-                <FaHtml5 className="h-9 w-9 text-white" />
-                <FaCss3Alt className="h-9 w-9 text-white" />
-                <RiTailwindCssFill className="h-9 w-9 text-white" />
-                <RiNextjsFill className="h-9 w-9 text-white" />
-                <FaReact className="h-9 w-9 text-white" />
-              </div>
-            </div>
-            <div className="border-green-500 border-l p-3">
-              <h1 className="uppercase">Backend Development</h1>
-              <div className="flex gap-5 mt-3">
-                <FaNodeJs className="h-9 w-9 text-white" />
-                <SiMongodb className="h-9 w-9 text-white" />
-                <SiExpress className="h-9 w-9 text-white" />
-                <FaPhp className="h-9 w-9 text-white" />
-                <TbApi className="h-9 w-9 text-white" />
-              </div>
-            </div>
-            <div className="border-green-500 border-l p-3">
-              <h1 className="uppercase">Tools</h1>
-              <div className="flex gap-5 mt-3">
-                <FaGitAlt className="h-9 w-9 text-white" />
-                <FaGithub className="h-9 w-9 text-white" />
-                <SiPostman className="h-9 w-9 text-white" />
-              </div>
-            </div>
-          </div> */}
         </div>
       </section>
 
