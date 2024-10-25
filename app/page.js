@@ -1,6 +1,6 @@
 'use client'
 import Image from "next/image";
-import heroImg from '@/public/img.jpg'
+import heroImg from '@/public/hero.jpg'
 import Link from "next/link";
 import pjxOne from '@/public/project1.jpg';
 import pjxTwo from '@/public/project6.jpg';
@@ -76,7 +76,7 @@ export default function Home() {
           </div>
           <div className="w-full md:w-5/12 flex justify-center">
             <div className="h-72 md:h-full w-full md:w-8/12 overflow-hidden rounded-md">
-              <Image src='/img.jpg' height={1000} width={1000} className="scale-150 h-full w-full object-cover object-center rounded-md" alt="" />
+              <Image src='/hero.jpg' height={1000} width={1000} className="scale-150 h-full w-full object-cover object-center rounded-md" alt="" />
             </div>
           </div>
           <div className="md:hidden w-full flex gap-3 mt-1 uppercase">
