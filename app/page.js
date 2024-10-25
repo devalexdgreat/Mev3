@@ -2,7 +2,6 @@
 import Image from "next/image";
 import heroImg from '@/public/img.jpg'
 import Link from "next/link";
-
 import pjxOne from '@/public/project1.jpg';
 import pjxTwo from '@/public/project6.jpg';
 import pjxThr from '@/public/project3.jpg';
