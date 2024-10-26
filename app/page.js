@@ -60,19 +60,6 @@ export default function Home() {
                 <Link href={'#'} className="bg-green-500 text-white py-1.5 px-6 rounded-md border-2 border-green-800">About</Link>
                 <Link href={'#'} className="bg-green-500 text-white py-1.5 px-6 rounded-md border-2 border-green-800">Contact Me</Link>
               </div>
-              {/* <div className="w-full flex gap-3 mt-4 md:mt-5">
-                <div className="py-1 rounded-md">
-                  <span className="font-bold text-gray-500">+4 Years <span className="font-bold">EXP.</span></span>
-                </div>
-                <div className="border border-green-500"></div>
-                <div className="py-1 rounded-md">
-                  <span className="font-bold text-gray-500">+19 Clients</span>
-                </div>
-                <div className="border border-green-500"></div>
-                <div className="py-1 rounded-md">
-                  <span className="font-bold text-gray-500">+54 Pjxs</span>
-                </div>
-              </div> */}
           </div>
           <div className="w-full md:w-5/12 flex justify-center">
             <div className="h-72 md:h-full w-full md:w-8/12 overflow-hidden rounded-md">
@@ -154,91 +141,18 @@ export default function Home() {
         <div className="w-11/12 mx-auto">
           <div className="w-full flex gap-2 items-center">
             <div className="border py-3 border-green-500"></div>
-            <h1 className="mt-0.5 font-medium uppercase">My Stack</h1>
+            <h1 className="mt-0.5 font-medium uppercase">About the Mind Behind the Code</h1>
           </div>
-          <div className="xl:flex hidden w-full mt-5">
-            <div className="bg-green-500 p-2 rounded-md border-4 border-green-800 shadow-lg shadow-green-500/30 rotate-[2deg] z-10">
-              <FaHtml5 className="h-12 w-12 text-white" />
-            </div>
-            <div className="bg-green-500 p-2 rounded-md border-4 border-green-800 shadow-lg shadow-green-500/30 rotate-[352deg]">
-              <FaCss3Alt className="h-12 w-12 text-white" />
-            </div>
-            <div className="bg-green-500 p-2 rounded-md border-4 border-green-800 shadow-lg shadow-green-500/30 rotate-[2deg] z-10">
-              <RiTailwindCssFill className="h-12 w-12 text-white" />
-            </div>
-            <div className="bg-green-500 p-2 rounded-md border-4 border-green-800 shadow-lg shadow-green-500/30 rotate-[352deg]">
-              <RiNextjsFill className="h-12 w-12 text-white" />
-            </div>
-            <div className="bg-green-500 p-2 rounded-md border-4 border-green-800 shadow-lg shadow-green-500/30 rotate-[2deg] z-10">
-              <FaReact className="h-12 w-12 text-white" />
-            </div>
-            <div className="bg-green-500 p-2 rounded-md border-4 border-green-800 shadow-lg shadow-green-500/30 rotate-[352deg]">
-              <FaNodeJs className="h-12 w-12 text-white" />
-            </div>
-            <div className="bg-green-500 p-2 rounded-md border-4 border-green-800 shadow-lg shadow-green-500/30 rotate-[2deg] z-10">
-              <SiMongodb className="h-12 w-12 text-white" />
-            </div>
-            <div className="bg-green-500 p-2 rounded-md border-4 border-green-800 shadow-lg shadow-green-500/30 rotate-[352deg]">
-              <SiExpress className="h-12 w-12 text-white" />
-            </div>
-            <div className="bg-green-500 p-2 rounded-md border-4 border-green-800 shadow-lg shadow-green-500/30 rotate-[2deg] z-10">
-              <FaPhp className="h-12 w-12 text-white" />
-            </div>
-            <div className="bg-green-500 p-2 rounded-md border-4 border-green-800 shadow-lg shadow-green-500/30 rotate-[352deg]">
-              <TbApi className="h-12 w-12 text-white" />
-            </div>
-            <div className="bg-green-500 p-2 rounded-md border-4 border-green-800 shadow-lg shadow-green-500/30 rotate-[2deg] z-10">
-              <FaGitAlt className="h-12 w-12 text-white" />
-            </div>
-            <div className="bg-green-500 p-2 rounded-md border-4 border-green-800 shadow-lg shadow-green-500/30 rotate-[352deg]">
-              <FaGithub className="h-12 w-12 text-white" />
-            </div>
-            <div className="bg-green-500 p-2 rounded-md border-4 border-green-800 shadow-lg shadow-green-500/30 rotate-[2deg] z-10">
-              <SiPostman className="h-12 w-12 text-white" />
-            </div>
-          </div>
-          <div className="w-full mt-5 xl:hidden">
-            <div className="grid grid-cols-5 md:grid-cols-10 lg:grid-cols-12">
-              <div className="flex justify-center bg-green-500 p-2 rounded-md border-4 border-green-800 shadow-lg shadow-green-500/30 rotate-[5deg] z-10">
-                <FaHtml5 className="h-12 w-12 text-white" />
-              </div>
-              <div className="flex justify-center bg-green-500 p-2 rounded-md border-4 border-green-800 shadow-lg shadow-green-500/30 rotate-[352deg]">
-                <FaCss3Alt className="h-12 w-12 text-white" />
-              </div>
-              <div className="flex justify-center bg-green-500 p-2 rounded-md border-4 border-green-800 shadow-lg shadow-green-500/30 rotate-[5deg] z-10">
-                <RiTailwindCssFill className="h-12 w-12 text-white" />
-              </div>
-              <div className="flex justify-center bg-green-500 p-2 rounded-md border-4 border-green-800 shadow-lg shadow-green-500/30 rotate-[352deg]">
-                <RiNextjsFill className="h-12 w-12 text-white" />
-              </div>
-              <div className="flex justify-center bg-green-500 p-2 rounded-md border-4 border-green-800 shadow-lg shadow-green-500/30 rotate-[5deg] z-10">
-                <FaReact className="h-12 w-12 text-white" />
-              </div>
-              <div className="flex justify-center bg-green-500 p-2 rounded-md border-4 border-green-800 shadow-lg shadow-green-500/30 rotate-[352deg]">
-                <FaNodeJs className="h-12 w-12 text-white" />
-              </div>
-              <div className="flex justify-center bg-green-500 p-2 rounded-md border-4 border-green-800 shadow-lg shadow-green-500/30 rotate-[5deg] z-10">
-                <SiMongodb className="h-12 w-12 text-white" />
-              </div>
-              <div className="flex justify-center bg-green-500 p-2 rounded-md border-4 border-green-800 shadow-lg shadow-green-500/30 rotate-[352deg]">
-                <SiExpress className="h-12 w-12 text-white" />
-              </div>
-              <div className="flex justify-center bg-green-500 p-2 rounded-md border-4 border-green-800 shadow-lg shadow-green-500/30 rotate-[5deg] z-10">
-                <FaPhp className="h-12 w-12 text-white" />
-              </div>
-              <div className="flex justify-center bg-green-500 p-2 rounded-md border-4 border-green-800 shadow-lg shadow-green-500/30 rotate-[352deg]">
-                <TbApi className="h-12 w-12 text-white" />
-              </div>
-              <div className="flex justify-center bg-green-500 p-2 rounded-md border-4 border-green-800 shadow-lg shadow-green-500/30 rotate-[5deg] z-10">
-                <FaGitAlt className="h-12 w-12 text-white" />
-              </div>
-              <div className="flex justify-center bg-green-500 p-2 rounded-md border-4 border-green-800 shadow-lg shadow-green-500/30 rotate-[352deg]">
-                <FaGithub className="h-12 w-12 text-white" />
-              </div>
-              <div className="flex justify-center bg-green-500 p-2 rounded-md border-4 border-green-800 shadow-lg shadow-green-500/30 rotate-[5deg] z-10">
-                <SiPostman className="h-12 w-12 text-white" />
+          <div className="mt-5 w-full flex">
+            <div className="w-full md:w-6/12">
+              <div className="text-lg">
+                <p>I’m a Fullstack Developer with 4 years of experience creating high-performance, user-centered web applications. Specializing in Next.js, React.js, Node.js, and MongoDB, I blend technical expertise with a passion for sleek, functional design.</p>
+                <br/>
+                <p>Using tools like Framer Motion, GSAP, and Tailwind CSS, I deliver smooth animations and responsive, visually engaging interfaces that elevate brands and engage users.</p>
+                <Link href={'#'} className="text-green-800 underline hover:text-green-700">Let’s create something exceptional together!</Link>
               </div>
             </div>
+            <div className="w-full md:w-6/12"></div>
           </div>
         </div>
       </section>
