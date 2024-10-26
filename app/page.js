@@ -5,7 +5,7 @@ import Link from "next/link";
 import pjxOne from '@/public/project2.jpg';
 import pjxTwo from '@/public/project6.jpg';
 import pjxThr from '@/public/project3.jpg';
-import { GoArrowUpRight } from "react-icons/go";
+import { GoArrowUpRight, GoInfo } from "react-icons/go";
 import { BsChevronRight } from "react-icons/bs";
 import { FaCss3Alt, FaGitAlt, FaGithub, FaHtml5, FaNodeJs, FaPhp, FaReact } from "react-icons/fa";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
@@ -18,7 +18,7 @@ import { useState } from "react";
 import apexIcon from '@/public/apex.webp'
 
 const data = [
-  {id: 1, title: 'Why work with me ?', content: 'In today’s fast-paced world, flexibility is essential. I offer high-quality design and web development expertise on a flexible basis, so you get the skills you need without the commitment of full-time hiring. Whether it’s a short-term project or ongoing support, pay only for what you need, when you need it. This approach means you’re not tied down to unnecessary costs, and you get tailored service with every project.'},
+  {id: 1, title: 'Why work with me ?', content: 'In today’s fast-paced world, flexibility is essential. I offer high-quality design and web development expertise on a flexible basis, so you get the skills you need without the commitment of full-time hiring. Whether it’s a short-term project or ongoing support, pay only for what you need, when you need it. This approach means you’re not tied down to unnecessary costs.'},
   {id: 2, title: 'Are there any refunds if i dont like the services?', content: 'Unfortunately we do not provide any refunds. This is due to the time and effort invested into producing high-quality design and development work. We can either continue improving the development until you are satisfied or you can pause/cancel your subscription.'},
   {id: 3, title: 'What if I already have a design? Can you build from it?', content: 'Certainly! If you have a design ready, I can develop a fully functional website based on it. I work closely with designers and clients to ensure the final product aligns with the original vision and functions seamlessly.'},
   {id: 4, title: 'How much does it cost to build a website?', content: 'The cost of a website depends on the project’s scope, complexity, and features. My starting rate is $300, which covers essential elements. For more advanced functionalities or larger projects, the price will adjust accordingly. I’d be happy to discuss your specific needs and provide a customized estimate!'},
@@ -59,7 +59,7 @@ export default function Home() {
                 I’m Great Alexander, a Fullstack Developer specializing in creating robust, scalable, and visually appealing web solutions.
               </h1>
               <div className="w-full flex gap-3 mt-5 md:mt-10 uppercase">
-                <Link href={'#'} className="bg-green-500 text-white py-1.5 px-6 rounded-md border-2 border-green-800">About</Link>
+                <Link href={'#about'} className="bg-green-500 text-white py-1.5 px-6 rounded-md border-2 border-green-800">About</Link>
                 <Link href={'#'} className="bg-green-500 text-white py-1.5 px-6 rounded-md border-2 border-green-800">Let&rsquo;s Work</Link>
               </div>
           </div>
@@ -139,11 +139,11 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="w-full py-16">
+      <section className="w-full py-16" id="about">
         <div className="w-11/12 mx-auto">
           <div className="w-full flex gap-2 items-center">
             <div className="border py-3 border-green-500"></div>
-            <h1 className="mt-0.5 font-medium uppercase">About the Mind Behind the Code</h1>
+            <h1 className="mt-0.5 font-medium uppercase">About the Mind Behind the Code</h1><GoInfo className="text-green-500 hover:cursor-pointer" />
           </div>
           <div className="mt-5 w-full flex flex-col md:flex-row gap-12 md:gap-3">
             <div className="w-full md:w-6/12">
@@ -172,7 +172,7 @@ export default function Home() {
                         2
                       </span>
                       <span class="ms-2 block text-sm font-medium text-gray-800 dark:text-white">
-                        Development
+                        Build
                       </span>
                     </div>
                     <div class="w-full h-px flex-1 bg-gray-200 group-last:hidden dark:bg-neutral-700"></div>
@@ -183,7 +183,7 @@ export default function Home() {
                         3
                       </span>
                       <span class="ms-2 block text-sm font-medium text-gray-800 dark:text-white">
-                        Launch & Support
+                        Deploy
                       </span>
                     </div>
                     <div class="w-full h-px flex-1 bg-gray-200 group-last:hidden dark:bg-neutral-700"></div>
@@ -228,7 +228,7 @@ export default function Home() {
                       10/2022 - Present
                     </h3>
 
-                    <p class="font-semibold text-sm text-gray-800 dark:text-neutral-200">
+                    <p class="font-medium text-sm text-gray-800 dark:text-neutral-200">
                       Freelance Fullstack Web Designer & Web Developer
                     </p>
 
@@ -248,7 +248,7 @@ export default function Home() {
                       02/2022 - 10/2022
                     </h3>
 
-                    <p class="font-semibold text-sm text-gray-800 dark:text-neutral-200">
+                    <p class="font-medium text-sm text-gray-800 dark:text-neutral-200">
                       Fullstack Software Developer at Apexloaded Ltd.
                     </p>
 
@@ -268,7 +268,7 @@ export default function Home() {
                       09/2021 - 02/2022
                     </h3>
 
-                    <p class="font-semibold text-sm text-gray-800 dark:text-neutral-200">
+                    <p class="font-medium text-sm text-gray-800 dark:text-neutral-200">
                       Intern Frontend Developer at Apexloaded
                     </p>
 
