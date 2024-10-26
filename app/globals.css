@@ -11,3 +11,7 @@
 html {
   scroll-behavior: smooth;
 }
+
+.newMenu {
+  height: 100dvh;
+}

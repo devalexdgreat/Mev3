@@ -31,7 +31,7 @@ export default function Navbar() {
                 </div>
             </div>
             {menu && (
-                <div className="fixed top-0 bg-green-800 h-screen w-full mx-auto flex flex-col uppercase font-medium lg:hidden">
+                <div className="fixed top-0 bg-green-800 newMenu w-full mx-auto flex flex-col uppercase font-medium lg:hidden">
                     <div className="h-full w-11/12 mx-auto relative">
                         <div className="h-full flex flex-col justify-center items-start uppercase">
                             <div className="flex flex-col gap-5 text-4xl">
