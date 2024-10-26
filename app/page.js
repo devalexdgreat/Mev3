@@ -55,7 +55,7 @@ export default function Home() {
       <section className="w-full flex justify-center items-center py-32">
         <div className="w-11/12 mx-auto flex flex-col md:flex-row items-center gap-6">
           <div className="w-full md:w-7/12">
-              <h1 className="text-xl md:text-2xl lg:text-4xl uppercase">
+              <h1 className="text-lg md:text-2xl lg:text-4xl uppercase">
                 I’m Great Alexander, a Fullstack Developer specializing in creating robust, scalable, and visually appealing web solutions.
               </h1>
               <div className="w-full flex gap-3 mt-5 md:mt-10 uppercase">
