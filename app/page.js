@@ -2,7 +2,7 @@
 import Image from "next/image";
 import heroImg from '@/public/hero.jpg'
 import Link from "next/link";
-import pjxOne from '@/public/project1.jpg';
+import pjxOne from '@/public/project2.jpg';
 import pjxTwo from '@/public/project6.jpg';
 import pjxThr from '@/public/project3.jpg';
 import { GoArrowUpRight } from "react-icons/go";
@@ -16,7 +16,7 @@ import { LuDot } from "react-icons/lu";
 import { useState } from "react";
 
 const data = [
-  {id: 1, title: 'Why work with Me ?', content: 'We understand that in today’s fast-paced worlds, flexibility is key. Our model allows you to get world-class design and Webflow Development without needing to hire full-time staff. Pay for what you need, for as long as you need it, so you never have to worry about paying for an employee that you don’t have work for.'},
+  {id: 1, title: 'Why work with me ?', content: 'In today’s fast-paced world, flexibility is essential. I offer high-quality design and web development expertise on a flexible basis, so you get the skills you need without the commitment of full-time hiring. Whether it’s a short-term project or ongoing support, pay only for what you need, when you need it. This approach means you’re not tied down to unnecessary costs, and you get tailored service with every project.'},
   {id: 2, title: 'Are there any refunds if i dont like the services?', content: 'Unfortunately we do not provide any refunds. This is due to the time and effort invested into producing high-quality design and development work. We can either continue improving the development until you are satisfied or you can pause/cancel your subscription.'},
   {id: 3, title: 'What if I already have a design? Can you build from it?', content: 'Certainly! If you have a design ready, I can develop a fully functional website based on it. I work closely with designers and clients to ensure the final product aligns with the original vision and functions seamlessly.'},
   {id: 4, title: 'How much does it cost to build a website?', content: 'The cost of a website depends on the project’s scope, complexity, and features. My starting rate is $300, which covers essential elements. For more advanced functionalities or larger projects, the price will adjust accordingly. I’d be happy to discuss your specific needs and provide a customized estimate!'},
@@ -25,7 +25,7 @@ const data = [
 
 function AccordionItem({title, content, isExpanded, onToggle}) {
   return (
-    <div className={`bg-green-500 border-4 border-green-800 flex justify-center flex-col rounded-md overflow-hidden transition-all duration-500 py-4 ${isExpanded ? "max-h-80" : "max-h-16" }`}>
+    <div className={`bg-green-900 border-2 border-green-800 flex justify-center flex-col rounded-md overflow-hidden transition-all duration-500 py-4 ${isExpanded ? "max-h-80" : "max-h-16" }`}>
       <div className="flex justify-between items-start pt-4 px-5 cursor-pointer" onClick={onToggle}>
         <div className="uppercase font-medium">
           {title}
@@ -53,14 +53,14 @@ export default function Home() {
       <section className="w-full flex justify-center items-center py-32">
         <div className="w-11/12 mx-auto flex flex-col md:flex-row items-center gap-6">
           <div className="w-full md:w-7/12">
-              <h1 className="text-3xl md:text-3xl lg:text-5xl uppercase">
-                I’m Great Alexander a Fullstack Developer specializing in ReactJS & Next.js
+              <h1 className="text-xl md:text-2xl lg:text-4xl uppercase">
+                I’m Great Alexander, a Fullstack Developer specializing in creating robust, scalable, and visually appealing web solutions.
               </h1>
-              <div className="hidden w-full md:flex gap-3 mt-10 uppercase">
+              <div className="w-full flex gap-3 mt-5 md:mt-10 uppercase">
                 <Link href={'#'} className="bg-green-500 text-white py-1.5 px-6 rounded-md border-2 border-green-800">About</Link>
                 <Link href={'#'} className="bg-green-500 text-white py-1.5 px-6 rounded-md border-2 border-green-800">Contact Me</Link>
               </div>
-              <div className="w-full flex gap-3 mt-4 md:mt-5">
+              {/* <div className="w-full flex gap-3 mt-4 md:mt-5">
                 <div className="py-1 rounded-md">
                   <span className="font-bold text-gray-500">+4 Years <span className="font-bold">EXP.</span></span>
                 </div>
@@ -72,24 +72,20 @@ export default function Home() {
                 <div className="py-1 rounded-md">
                   <span className="font-bold text-gray-500">+54 Pjxs</span>
                 </div>
-              </div>
+              </div> */}
           </div>
           <div className="w-full md:w-5/12 flex justify-center">
             <div className="h-72 md:h-full w-full md:w-8/12 overflow-hidden rounded-md">
               <Image src='/hero.jpg' height={1000} width={1000} className="scale-150 h-full w-full object-cover object-center rounded-md" alt="" />
             </div>
           </div>
-          <div className="md:hidden w-full flex gap-3 mt-1 uppercase">
-            <Link href={'#'} className="bg-green-500 text-white py-1.5 px-6 rounded-md w-full text-center border-2 border-green-800">About</Link>
-            <Link href={'#'} className="bg-green-500 text-white py-1.5 px-6 rounded-md w-full text-center border-2 border-green-800">Contact Me</Link>
-          </div>
         </div>
       </section>
 
-      <section className="w-full py-16">
+      <section className="w-full pb-16">
         <div className="w-11/12 mx-auto">
-          <div className="w-full flex flex-col-reverse md:flex-row gap-1 md:gap-2 items-center justify-center md:justify-start">
-            <div className="border px-8 md:px-0 md:py-3  border-green-500"></div>
+          <div className="w-full flex gap-2 items-center">
+            <div className="border py-3 border-green-500"></div>
             <h1 className="mt-0.5 font-medium uppercase">Featured Projects</h1>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-5">
@@ -156,8 +152,8 @@ export default function Home() {
 
       <section className="w-full py-16">
         <div className="w-11/12 mx-auto">
-          <div className="w-full flex flex-col-reverse md:flex-row gap-1 md:gap-2 items-center justify-center md:justify-start">
-            <div className="border px-8 md:px-0 md:py-3  border-green-500"></div>
+          <div className="w-full flex gap-2 items-center">
+            <div className="border py-3 border-green-500"></div>
             <h1 className="mt-0.5 font-medium uppercase">My Stack</h1>
           </div>
           <div className="xl:flex hidden w-full mt-5">
@@ -249,8 +245,8 @@ export default function Home() {
 
       <section className="w-full py-16">
         <div className="w-11/12 mx-auto">
-          <div className="w-full flex flex-col-reverse md:flex-row gap-1 md:gap-2 items-center justify-center md:justify-start">
-            <div className="border px-8 md:px-0 md:py-3  border-green-500"></div>
+          <div className="w-full flex gap-2 items-center">
+            <div className="border py-3 border-green-500"></div>
             <h1 className="mt-0.5 font-medium uppercase">Words of appreciation</h1>
           </div>
           <div className="w-full mt-5 columns-1 md:columns-3 gap-40 md:gap-5">
@@ -309,9 +305,9 @@ export default function Home() {
       <section className='w-full py-16'>
         <div className="w-11/12 flex flex-col md:flex-row mx-auto">
             <div className="w-full md:w-6/12">
-              <div className="w-full flex flex-col-reverse md:flex-row gap-2 items-center justify-center md:justify-start text-center md:text-left">
-                <div className="border py-0 px-8 md:px-0 md:py-12 border-green-500"></div>
-                <h1 className="uppercase text-4xl md:text-8xl">FAQs</h1>
+              <div className="w-full flex gap-2 items-center text-center md:text-left">
+                <div className="border py-3 px-0 md:px-0 md:py-12 border-green-500"></div>
+                <h1 className="uppercase font-medium md:text-8xl">FAQs</h1>
               </div>
             </div>
             <div className="pt-5 md:pt-3 w-full md:w-6/12 flex flex-col gap-3">
