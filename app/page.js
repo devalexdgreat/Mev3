@@ -58,7 +58,7 @@ export default function Home() {
 
   return (
     <main className="overflow-hidden">
-      <section className="w-full flex justify-center items-center pt-32 pb-16">
+      <section className="w-full flex justify-center items-center pt-32 pb-16" id="adg">
         <div className="w-11/12 mx-auto flex flex-col md:flex-row items-center gap-6">
           <div className="w-full md:w-7/12">
               <h1 className="text-lg md:text-2xl lg:text-4xl uppercase">

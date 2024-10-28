@@ -20,10 +20,10 @@ export default function Navbar() {
                 <Link href={'/'} className="font-medium hidden md:block">Great Alexander (ADG).</Link>
                 <Link href={'/'} className="font-light text-2xl md:hidden block">ADG</Link>
                 <div className="hidden lg:flex gap-12">
-                    <Link href={'/'} className="text-green-500 hover:text-gray-500 duration-500">Adg</Link>
+                    <Link href={'/#adg'} className="text-green-500 hover:text-gray-500 duration-500">Adg</Link>
                     <Link href={'#about'} className="text-gray-500 hover:text-green-500 duration-500">About</Link>
                     <Link href={'#pjx'} className="text-gray-500 hover:text-green-500 duration-500">Projects</Link>
-                    <Link href={'#'} className="text-gray-500 hover:text-green-500 duration-500">Services</Link>
+                    <Link href={'#services'} className="text-gray-500 hover:text-green-500 duration-500">Services</Link>
                     <Link href={'#cta'} className="text-gray-500 hover:text-green-500 duration-500">Contact</Link>
                 </div>
                 <div className="lg:hidden block">
