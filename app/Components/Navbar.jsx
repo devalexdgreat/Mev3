@@ -20,11 +20,11 @@ export default function Navbar() {
                 <Link href={'/'} className="font-medium hidden md:block">Great Alexander (ADG).</Link>
                 <Link href={'/'} className="font-light text-2xl md:hidden block">ADG</Link>
                 <div className="hidden lg:flex gap-12">
-                    <Link href={'#'} className="text-green-500 hover:text-gray-500 duration-500">Adg</Link>
-                    <Link href={'#'} className="text-gray-500 hover:text-green-500 duration-500">About</Link>
-                    <Link href={'#'} className="text-gray-500 hover:text-green-500 duration-500">Projects</Link>
+                    <Link href={'/'} className="text-green-500 hover:text-gray-500 duration-500">Adg</Link>
+                    <Link href={'#about'} className="text-gray-500 hover:text-green-500 duration-500">About</Link>
+                    <Link href={'#pjx'} className="text-gray-500 hover:text-green-500 duration-500">Projects</Link>
                     <Link href={'#'} className="text-gray-500 hover:text-green-500 duration-500">Services</Link>
-                    <Link href={'#'} className="text-gray-500 hover:text-green-500 duration-500">Contact</Link>
+                    <Link href={'#cta'} className="text-gray-500 hover:text-green-500 duration-500">Contact</Link>
                 </div>
                 <div className="lg:hidden block">
                     <HiOutlineBars3BottomRight onClick={toggleMenu} className="h-8 w-8 hover:text-green-500 hover:cursor-pointer duration-500" />
@@ -36,11 +36,11 @@ export default function Navbar() {
                         <div className="h-full flex flex-col justify-center items-start uppercase">
                             <div className="flex flex-col gap-5 text-4xl">
                                 <h1 className="uppercase text-base">Links</h1>
-                                <Link href={'#'} onClick={toggleMenu} className="hover:text-green-500 duration-500">Home</Link>
-                                <Link href={'#'} onClick={toggleMenu} className="hover:text-green-500 duration-500">About</Link>
-                                <Link href={'#'} onClick={toggleMenu} className="hover:text-green-500 duration-500">Projects</Link>
+                                <Link href={'/'} onClick={toggleMenu} className="hover:text-green-500 duration-500">Home</Link>
+                                <Link href={'#about'} onClick={toggleMenu} className="hover:text-green-500 duration-500">About</Link>
+                                <Link href={'#pjx'} onClick={toggleMenu} className="hover:text-green-500 duration-500">Projects</Link>
                                 <Link href={'#'} onClick={toggleMenu} className="hover:text-green-500 duration-500">Services</Link>
-                                <Link href={'#'} onClick={toggleMenu} className="hover:text-green-500 duration-500">Contact</Link>
+                                <Link href={'#cta'} onClick={toggleMenu} className="hover:text-green-500 duration-500">Contact</Link>
                             </div>
                         </div>
                         <div className="w-full absolute top-0 right-0 mx-auto flex justify-between py-2 left-0">

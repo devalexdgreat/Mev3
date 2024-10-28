@@ -2,9 +2,12 @@
 import Image from "next/image";
 import heroImg from '@/public/hero.jpg'
 import Link from "next/link";
-import pjxOne from '@/public/project2.jpg';
-import pjxTwo from '@/public/project6.jpg';
+import pjxOne from '@/public/pjx2.jpg';
+import pjxTwo from '@/public/pjx1.jpg';
 import pjxThr from '@/public/project3.jpg';
+import pjxFor from '@/public/pjx3.jpg';
+import pjxFiv from '@/public/pjx5.jpg';
+import pjxSix from '@/public/project6.jpg';
 import { GoArrowUpRight, GoInfo } from "react-icons/go";
 import { BsChevronRight } from "react-icons/bs";
 import { FaCss3Alt, FaGitAlt, FaGithub, FaHtml5, FaNodeJs, FaPhp, FaReact } from "react-icons/fa";
@@ -13,6 +16,7 @@ import { SiMongodb, SiPostman } from "react-icons/si";
 import { SiExpress } from "react-icons/si";
 import { TbApi } from "react-icons/tb";
 import { LuDot } from "react-icons/lu";
+import { PiCertificateLight, PiReadCvLogoLight } from "react-icons/pi";
 import { useState } from "react";
 
 import apexIcon from '@/public/apex.webp'
@@ -27,12 +31,12 @@ const data = [
 
 function AccordionItem({title, content, isExpanded, onToggle}) {
   return (
-    <div className={`bg-green-900 border-2 border-green-800 flex justify-center flex-col rounded-md overflow-hidden transition-all duration-500 py-4 ${isExpanded ? "max-h-80" : "max-h-16" }`}>
+    <div className={`bg-green-900 border-2 border-green-800 flex justify-center flex-col rounded-md overflow-hidden transition-all duration-500 py-4 group ${isExpanded ? "max-h-80" : "max-h-16" }`}>
       <div className="flex justify-between items-start pt-4 px-5 cursor-pointer" onClick={onToggle}>
         <div className="uppercase font-medium">
           {title}
         </div>
-        <BsChevronRight className={`transition-all duration-300 h-6 ${isExpanded ? "rotate-90" : "" }`} />
+        <BsChevronRight className={`group-hover:translate-x-1 group-hover:text-green-500 transition-all duration-300 h-6 ${isExpanded ? "rotate-90 text-green-500" : "" }`} />
       </div>
 
       <div className={`text-gray-100 px-5 pb-4 overflow-hidden translate-all duration-500 ${isExpanded ? "opacity-100 pt-5" : "opacity-0" }`}>
@@ -52,15 +56,15 @@ export default function Home() {
 
   return (
     <main className="overflow-hidden">
-      <section className="w-full flex justify-center items-center py-32">
+      <section className="w-full flex justify-center items-center pt-32 pb-16">
         <div className="w-11/12 mx-auto flex flex-col md:flex-row items-center gap-6">
           <div className="w-full md:w-7/12">
               <h1 className="text-lg md:text-2xl lg:text-4xl uppercase">
                 I’m Great Alexander, a Fullstack Developer specializing in creating robust, scalable, and visually appealing web solutions.
               </h1>
               <div className="w-full flex gap-3 mt-5 md:mt-10 uppercase">
-                <Link href={'#about'} className="bg-green-500 text-white py-1.5 px-6 rounded-md border-2 border-green-800">About</Link>
-                <Link href={'#'} className="bg-green-500 text-white py-1.5 px-6 rounded-md border-2 border-green-800">Let&rsquo;s Work</Link>
+                <Link href={'#about'} className="bg-green-500 text-white py-1.5 px-6 rounded-md border-2 border-green-800 hover:bg-green-700 duration-500">About</Link>
+                <Link href={'#cta'} className="bg-green-500 text-white py-1.5 px-6 rounded-md border-2 border-green-800 hover:bg-green-700 duration-500">Let&rsquo;s Work</Link>
               </div>
           </div>
           <div className="w-full md:w-5/12 flex justify-center">
@@ -71,7 +75,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="w-full pb-16">
+      <section className="w-full py-16" id="pjx">
         <div className="w-11/12 mx-auto">
           <div className="w-full flex gap-2 items-center">
             <div className="border py-3 border-green-500"></div>
@@ -81,16 +85,70 @@ export default function Home() {
             <div className="w-full group">
               <div className="overflow-hidden rounded-md relative">
                 <Link href={'#'} className="absolute top-0 left-0 z-10 h-full w-full"></Link>
+                <Image src={pjxFiv} alt="" className="h-full w-full object-cover rounded-md scale-125 group-hover:scale-150 group-hover:cursor-pointer duration-500" />
+              </div>
+              <div className="mt-2 w-full flex items-center justify-between text-gray-500">
+                <div className="w-8/12 truncate">
+                  <h1 className="uppercase text-white">Bivora Ltd.</h1>
+                  <span className="text-gray-500 truncate w-full">Web Development, Api Integration</span>
+                </div>
+                <div className="w-4/12 flex flex-col justify-end items-end">
+                  <span className="text-gray-500">2024</span>
+                  <Link href={'#'} className="">
+                    <GoArrowUpRight className="h-6 w-6 hover:text-green-500 duration-500" />
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className="w-full group">
+              <div className="overflow-hidden rounded-md relative">
+                <Link href={'#'} className="absolute top-0 left-0 z-10 h-full w-full"></Link>
+                <Image src={pjxFor} alt="" className="h-full w-full object-cover rounded-md scale-125 group-hover:scale-150 group-hover:cursor-pointer duration-500" />
+              </div>
+              <div className="mt-2 w-full flex items-center justify-between text-gray-500">
+                <div className="w-8/12 truncate">
+                  <h1 className="uppercase text-white">StreetGottalent</h1>
+                  <span className="text-gray-500 truncate w-full">Development, Api Integration</span>
+                </div>
+                <div className="w-4/12 flex flex-col justify-end items-end">
+                  <span className="text-gray-500">2024</span>
+                  <Link href={'https://www.streetgottalent.com/'} className="">
+                    <GoArrowUpRight className="h-6 w-6 hover:text-green-500 duration-500" />
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className="w-full group">
+              <div className="overflow-hidden rounded-md relative">
+                <Link href={'#'} className="absolute top-0 left-0 z-10 h-full w-full"></Link>
                 <Image src={pjxOne} alt="" className="h-full w-full object-cover rounded-md scale-125 group-hover:scale-150 group-hover:cursor-pointer duration-500" />
               </div>
               <div className="mt-2 w-full flex items-center justify-between text-gray-500">
                 <div className="w-8/12 truncate">
-                  <h1 className="uppercase text-white">Amazon Mfb.</h1>
-                  <span className="text-gray-500 truncate w-full">Api Integration</span>
+                  <h1 className="uppercase text-white">JandJay Hairs.</h1>
+                  <span className="text-gray-500 truncate w-full">Design, Web Development</span>
                 </div>
                 <div className="w-4/12 flex flex-col justify-end items-end">
-                  <span className="text-gray-500">2021</span>
-                  <Link href={'#'} className="">
+                  <span className="text-gray-500">2022</span>
+                  <Link href={'https://jandjaynaturalhairs.vercel.app/'} className="">
+                    <GoArrowUpRight className="h-6 w-6 hover:text-green-500 duration-500" />
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className="w-full group">
+              <div className="overflow-hidden rounded-md relative">
+                <Link href={'#'} className="absolute top-0 left-0 z-10 h-full w-full"></Link>
+                <Image src={pjxSix} alt="" className="h-full w-full object-cover rounded-md scale-125 group-hover:scale-150 group-hover:cursor-pointer duration-500" />
+              </div>
+              <div className="mt-2 w-full flex items-center justify-between text-gray-500">
+                <div className="w-8/12 truncate">
+                  <h1 className="uppercase text-white">Inventig ltd.</h1>
+                  <span className="text-gray-500 truncate w-full">Web Design, Web Development</span>
+                </div>
+                <div className="w-4/12 flex flex-col justify-end items-end">
+                  <span className="text-gray-500">2023</span>
+                  <Link href={'https://jandjaynaturalhairs.vercel.app/'} className="">
                     <GoArrowUpRight className="h-6 w-6 hover:text-green-500 duration-500" />
                   </Link>
                 </div>
@@ -103,12 +161,12 @@ export default function Home() {
               </div>
               <div className="mt-2 w-full flex items-center justify-between text-gray-500">
                 <div className="w-8/12 truncate">
-                  <h1 className="uppercase text-white">Amazon Mfb.</h1>
-                  <span className="text-gray-500 truncate w-full">Api Integration</span>
+                  <h1 className="uppercase text-white">AK Global Pte.</h1>
+                  <span className="text-gray-500 truncate w-full">Development, Api Integration</span>
                 </div>
                 <div className="w-4/12 flex flex-col justify-end items-end">
-                  <span className="text-gray-500">2021</span>
-                  <Link href={'#'} className="">
+                  <span className="text-gray-500">2023</span>
+                  <Link href={'https://www.akglobalshipservices.com/'} className="">
                     <GoArrowUpRight className="h-6 w-6 hover:text-green-500 duration-500" />
                   </Link>
                 </div>
@@ -121,12 +179,12 @@ export default function Home() {
               </div>
               <div className="mt-2 w-full flex items-center justify-between text-gray-500">
                 <div className="w-8/12 truncate">
-                  <h1 className="uppercase text-white">Amazon Mfb.</h1>
-                  <span className="text-gray-500 truncate w-full">Api Integration</span>
+                  <h1 className="uppercase text-white">Medisync</h1>
+                  <span className="text-gray-500 truncate w-full">Frontend Development</span>
                 </div>
                 <div className="w-4/12 flex flex-col justify-end items-end">
                   <span className="text-gray-500">2021</span>
-                  <Link href={'#'} className="">
+                  <Link href={'https://medicsynclub.vercel.app/'} className="">
                     <GoArrowUpRight className="h-6 w-6 hover:text-green-500 duration-500" />
                   </Link>
                 </div>
@@ -152,43 +210,20 @@ export default function Home() {
                 <p className="mb-5">Using tools like Framer Motion, GSAP, and Tailwind CSS, I deliver smooth animations and responsive, visually engaging interfaces that elevate brands and engage users.</p>
                 <div className="w-full flex gap-2 items-center mb-3">
                   <div className="border py-3 border-green-500"></div>
-                  <h1 className="mt-0.5 font-medium uppercase">My Process</h1>
+                  <h1 className="mt-0.5 font-medium uppercase">My Certifications and CV</h1>
                 </div>
-                <ul class="relative flex flex-row gap-x-2 mb-8">
-                  <li class="flex items-center gap-x-2 shrink basis-0 flex-1 group">
-                    <div class="min-w-7 min-h-7 inline-flex justify-center items-center text-xs align-middle">
-                      <span class="size-7 flex justify-center items-center shrink-0 bg-gray-100 font-medium text-gray-800 rounded-full dark:bg-green-800 dark:text-white">
-                        1
-                      </span>
-                      <span class="ms-2 block text-sm font-medium text-gray-800 dark:text-white">
-                        Design
-                      </span>
-                    </div>
-                    <div class="w-full h-px flex-1 bg-gray-200 group-last:hidden dark:bg-neutral-700"></div>
-                  </li>
-                  <li class="flex items-center gap-x-2 shrink basis-0 flex-1 group">
-                    <div class="min-w-7 min-h-7 inline-flex justify-center items-center text-xs align-middle">
-                      <span class="size-7 flex justify-center items-center shrink-0 bg-gray-100 font-medium text-gray-800 rounded-full dark:bg-green-800 dark:text-white">
-                        2
-                      </span>
-                      <span class="ms-2 block text-sm font-medium text-gray-800 dark:text-white">
-                        Build
-                      </span>
-                    </div>
-                    <div class="w-full h-px flex-1 bg-gray-200 group-last:hidden dark:bg-neutral-700"></div>
-                  </li>
-                  <li class="flex items-center gap-x-2 shrink basis-0 flex-1 group">
-                    <div class="min-w-7 min-h-7 inline-flex justify-center items-center text-xs align-middle">
-                      <span class="size-7 flex justify-center items-center shrink-0 bg-gray-100 font-medium text-gray-800 rounded-full dark:bg-green-800 dark:text-white">
-                        3
-                      </span>
-                      <span class="ms-2 block text-sm font-medium text-gray-800 dark:text-white">
-                        Deploy
-                      </span>
-                    </div>
-                    <div class="w-full h-px flex-1 bg-gray-200 group-last:hidden dark:bg-neutral-700"></div>
-                  </li>
-                </ul>
+                <div className="mb-5 flex gap-3">
+                  <Link href={'/res.pdf'} className="" passHref legacyBehavior>
+                    <a target="_blank" className="flex gap-2 bg-green-500 py-1.5 border-2 border-green-800 rounded-md px-6 hover:bg-green-700 duration-500">
+                      <PiReadCvLogoLight className="h-6 w-6" /><span className="uppercase">CV</span>
+                    </a>
+                  </Link>
+                  <Link href={'/cert.pdf'} className="" passHref legacyBehavior>
+                    <a target="_blank" className="flex gap-2 bg-green-500 py-1.5 border-2 border-green-800 rounded-md px-6 hover:bg-green-700 duration-500">
+                      <PiCertificateLight className="h-6 w-6" /><span className="uppercase">Certificate</span>
+                    </a>
+                  </Link>
+                </div>
                 <div className="w-full flex gap-2 items-center mb-3">
                   <div className="border py-3 border-green-500"></div>
                   <h1 className="mt-0.5 font-medium uppercase">My Stack / tools</h1>
@@ -208,7 +243,7 @@ export default function Home() {
                   <FaGithub className="h-10 w-10 text-gray-200" />
                   <SiPostman className="h-10 w-10 text-gray-200" />
                 </div>
-                <Link href={'#'} className="rounded-md py-1.5 px-6 border-green-800 border-2 bg-green-500 duration-500 hover:bg-green-600 uppercase">Let&rsquo;s Work</Link>
+                <Link href={'#cta'} className="rounded-md py-1.5 px-6 border-green-800 border-2 bg-green-500 duration-500 hover:bg-green-600 uppercase">Let&rsquo;s Work</Link>
             </div>
             <div className="w-full md:w-6/12">
               <div className="w-full flex gap-2 items-center mb-5">
@@ -224,11 +259,11 @@ export default function Home() {
                     </div>
                   </div>
                   <div class="grow pb-8 group-last:pb-0">
-                    <h3 class="mb-1 text-xs text-gray-500">
+                    <h3 class="mb-1 text-sm text-gray-500">
                       10/2022 - Present
                     </h3>
 
-                    <p class="font-medium text-sm text-gray-800 dark:text-neutral-200">
+                    <p class="font-medium text-base text-gray-800 dark:text-neutral-200">
                       Freelance Fullstack Web Designer & Web Developer
                     </p>
 
@@ -244,11 +279,11 @@ export default function Home() {
                     </div>
                   </div>
                   <div class="grow pb-8 group-last:pb-0">
-                    <h3 class="mb-1 text-xs text-gray-500">
+                    <h3 class="mb-1 text-sm text-gray-500">
                       02/2022 - 10/2022
                     </h3>
 
-                    <p class="font-medium text-sm text-gray-800 dark:text-neutral-200">
+                    <p class="font-medium text-base text-gray-800 dark:text-neutral-200">
                       Fullstack Software Developer at Apexloaded Ltd.
                     </p>
 
@@ -264,11 +299,11 @@ export default function Home() {
                     </div>
                   </div>
                   <div class="grow pb-8 group-last:pb-0">
-                    <h3 class="mb-1 text-xs text-gray-500">
+                    <h3 class="mb-1 text-sm text-gray-500">
                       09/2021 - 02/2022
                     </h3>
 
-                    <p class="font-medium text-sm text-gray-800 dark:text-neutral-200">
+                    <p class="font-medium text-base text-gray-800 dark:text-neutral-200">
                       Intern Frontend Developer at Apexloaded
                     </p>
 
@@ -289,7 +324,7 @@ export default function Home() {
             <div className="border py-3 border-green-500"></div>
             <h1 className="mt-0.5 font-medium uppercase">Words of appreciation</h1>
           </div>
-          <div className="w-full mt-5 columns-1 md:columns-3 gap-40 md:gap-5">
+          <div className="w-full mt-5 columns-1 md:columns-1 lg:columns-3 gap-40 md:gap-5">
             <div className="bg-green-500/30 p-2 rounded-md rotate-[358deg] shadow-green-500/10 shadow-lg">
               <div className="border border-green-500/20 px-3 py-5 rounded-md">
                 <div>
@@ -358,7 +393,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="w-full py-16">
+      <section className="w-full py-16" id="cta">
         <div className="w-11/12 mx-auto">
           <div className="w-full flex gap-2 items-center">
             <div className="border py-3 border-green-500"></div>
@@ -369,7 +404,7 @@ export default function Home() {
               <h1 className="text-3xl uppercase">Need help with a project ?</h1>
               <span className="text-gray-500">Feel free to reach out if you&rsquo;d like to collaborate, need help with a project, or just want to connect. I&rsquo;m open to new opportunities and ideas.</span>
               <div className="w-full mt-5">
-                <Link href={'#'} className="bg-green-500 rounded-md py-1.5 px-6 uppercase border-2 border-green-800 duration-500 hover:bg-green-600">Let&rsquo;s Work</Link>
+                <Link href={'mailto:alex_dgeat001@protonmail.com'} className="bg-green-500 rounded-md py-1.5 px-6 uppercase border-2 border-green-800 duration-500 hover:bg-green-600">Let&rsquo;s Work</Link>
               </div>
             </div>
           </div>
