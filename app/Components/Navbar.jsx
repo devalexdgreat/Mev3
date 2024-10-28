@@ -36,10 +36,10 @@ export default function Navbar() {
                         <div className="h-full flex flex-col justify-center items-start uppercase">
                             <div className="flex flex-col gap-5 text-4xl">
                                 <h1 className="uppercase text-base">Links</h1>
-                                <Link href={'/'} onClick={toggleMenu} className="hover:text-green-500 duration-500">Home</Link>
+                                <Link href={'/#adg'} onClick={toggleMenu} className="hover:text-green-500 duration-500">Home</Link>
                                 <Link href={'#about'} onClick={toggleMenu} className="hover:text-green-500 duration-500">About</Link>
                                 <Link href={'#pjx'} onClick={toggleMenu} className="hover:text-green-500 duration-500">Projects</Link>
-                                <Link href={'#'} onClick={toggleMenu} className="hover:text-green-500 duration-500">Services</Link>
+                                <Link href={'#services'} onClick={toggleMenu} className="hover:text-green-500 duration-500">Services</Link>
                                 <Link href={'#cta'} onClick={toggleMenu} className="hover:text-green-500 duration-500">Contact</Link>
                             </div>
                         </div>
