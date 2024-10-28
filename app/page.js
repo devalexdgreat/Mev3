@@ -318,6 +318,26 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="w-full py-16" id="services">
+        <div className="w-11/12 mx-auto flex flex-col md:flex-row">
+          <div className="w-full md:w-6/12">
+            <div className="w-full flex gap-2 items-center text-center md:text-left">
+              <div className="border py-3 px-0 md:px-0 md:py-12 border-green-500"></div>
+              <h1 className="uppercase font-medium md:text-8xl">Services</h1>
+            </div>
+          </div>
+          <div className="w-full md:w-6/12">
+            <div className="w-full flex flex-col text-3xl md:text-6xl pt-2">
+              <div className="border-b border-green-500 py-4">UI/UX Design</div>
+              <div className="border-b border-green-500 py-4">Graphics Design</div>
+              <div className="border-b border-green-500 py-4">Web Development</div>
+              <div className="border-b border-green-500 py-4">Backend Design</div>
+              <div className="border-b border-green-500 py-4">Api Integration</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="w-full py-16">
         <div className="w-11/12 mx-auto">
           <div className="w-full flex gap-2 items-center">

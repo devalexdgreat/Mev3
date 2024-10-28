@@ -1,7 +1,7 @@
 'use client'
 import Link from "next/link";
 import { useState } from "react";
-import { FaFacebook, FaGithub, FaInstagram, FaTiktok } from "react-icons/fa";
+import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaTiktok } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { HiOutlineBars3BottomRight } from "react-icons/hi2";
 import { IoCloseOutline } from "react-icons/io5";
@@ -52,23 +52,37 @@ export default function Navbar() {
                         <div className="w-full absolute bottom-0 right-0 mx-auto flex gap-5 flex-col py-2 left-0">
                             <h1 className="uppercase text-base">Socials</h1>
                             <div className="flex gap-5 pb-16 justify-between">
-                                <Link href={'#'} onClick={toggleMenu} className='hover:text-green-500 duration-500'>
-                                    <FaGithub className="h-10 w-10 " />
+                                <Link href={'https://github.com/devalexdgreat'} onClick={toggleMenu} className='hover:text-green-500 duration-500' passHref legacyBehavior>
+                                    <a target="_blank">
+                                        <FaGithub />
+                                    </a>
                                 </Link>
-                                <Link href={'#'} onClick={toggleMenu} className='hover:text-green-500 duration-500'>
-                                    <FaSquareXTwitter className="h-10 w-10 " />
+                                <Link href={'https://www.linkedin.com/in/great-alexander-adgdev'} onClick={toggleMenu} className='hover:text-green-500 duration-500' passHref legacyBehavior>
+                                    <a target="_blank">
+                                        <FaLinkedin />
+                                    </a>
                                 </Link>
-                                <Link href={'#'} onClick={toggleMenu} className='hover:text-green-500 duration-500'>
-                                    <FaInstagram className="h-10 w-10 " />
+                                <Link href={'https://x.com/adgdev_'} onClick={toggleMenu} className='hover:text-green-500 duration-500' passHref legacyBehavior>
+                                    <a target="_blank">
+                                        <FaSquareXTwitter />
+                                    </a>
                                 </Link>
-                                <Link href={'#'} onClick={toggleMenu} className='hover:text-green-500 duration-500'>
-                                    <FaFacebook className="h-10 w-10 " />
+                                <Link href={'https://www.instagram.com/adg.dev/'} onClick={toggleMenu} className='hover:text-green-500 duration-500' passHref legacyBehavior>
+                                    <a target="_blank">
+                                        <FaInstagram />
+                                    </a>
                                 </Link>
-                                <Link href={'#'} onClick={toggleMenu} className='hover:text-green-500 duration-500'>
-                                    <FaTiktok className="h-10 w-10 " />
+                                <Link href={'https://web.facebook.com/adgdevfb/'} onClick={toggleMenu} className='hover:text-green-500 duration-500' passHref legacyBehavior>
+                                    <a target="_blank">
+                                        <FaFacebook />
+                                    </a>
+                                </Link>
+                                <Link href={'https://www.tiktok.com/@adg.dev'} onClick={toggleMenu} className='hover:text-green-500 duration-500' passHref legacyBehavior>
+                                    <a target="_blank">
+                                        <FaTiktok />
+                                    </a>
                                 </Link>
                             </div>
-                            
                         </div>
                     </div>
                 </div>
