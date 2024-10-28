@@ -17,6 +17,8 @@ import { SiExpress } from "react-icons/si";
 import { TbApi } from "react-icons/tb";
 import { LuDot } from "react-icons/lu";
 import { PiCertificateLight, PiReadCvLogoLight } from "react-icons/pi";
+import { AiOutlineApi, AiOutlineCloudServer, AiOutlineLayout } from "react-icons/ai";
+import { FiCode, FiImage } from "react-icons/fi";
 import { useState } from "react";
 
 import apexIcon from '@/public/apex.webp'
@@ -327,12 +329,12 @@ export default function Home() {
             </div>
           </div>
           <div className="w-full md:w-6/12">
-            <div className="w-full flex flex-col text-3xl md:text-6xl pt-2">
-              <div className="border-b border-green-500 py-4">UI/UX Design</div>
-              <div className="border-b border-green-500 py-4">Graphics Design</div>
-              <div className="border-b border-green-500 py-4">Web Development</div>
-              <div className="border-b border-green-500 py-4">Backend Design</div>
-              <div className="border-b border-green-500 py-4">Api Integration</div>
+            <div className="w-full flex flex-col text-3xl md:text-5xl pt-2">
+              <div className="border-b border-green-500 py-4 flex items-center gap-2 hover:text-green-500 duration-500 hover:cursor-pointer"><AiOutlineLayout />UI/UX Design</div>
+              <div className="border-b border-green-500 py-4 flex items-center gap-2 hover:text-green-500 duration-500 hover:cursor-pointer"><FiImage />Graphics Design</div>
+              <div className="border-b border-green-500 py-4 flex items-center gap-2 hover:text-green-500 duration-500 hover:cursor-pointer"><FiCode />Web Development</div>
+              <div className="border-b border-green-500 py-4 flex items-center gap-2 hover:text-green-500 duration-500 hover:cursor-pointer"><AiOutlineCloudServer />Backend Development</div>
+              <div className="border-b border-green-500 py-4 flex items-center gap-2 hover:text-green-500 duration-500 hover:cursor-pointer"><AiOutlineApi />Api Integration</div>
             </div>
           </div>
         </div>
