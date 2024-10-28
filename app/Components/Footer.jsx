@@ -8,33 +8,33 @@ export default function Footer() {
             <div className="w-11/12 mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-3">
                 <h1 className=" text-gray-500">&copy; Great Alexander, All Rights Reserved 2024.</h1>
                 <div className="flex text-gray-500 gap-5">
-                    <Link href={'https://github.com/devalexdgreat'} className='hover:text-green-500 duration-500' passHref legacyBehavior>
-                        <a target="_blank">
+                    <Link href={'https://github.com/devalexdgreat'} passHref legacyBehavior>
+                        <a target="_blank" className='hover:text-green-500 duration-500'>
                             <FaGithub />
                         </a>
                     </Link>
-                    <Link href={'https://www.linkedin.com/in/great-alexander-adgdev'} className='hover:text-green-500 duration-500' passHref legacyBehavior>
-                        <a target="_blank">
+                    <Link href={'https://www.linkedin.com/in/great-alexander-adgdev'} className='' passHref legacyBehavior>
+                        <a target="_blank" className='hover:text-green-500 duration-500'>
                             <FaLinkedin />
                         </a>
                     </Link>
-                    <Link href={'https://x.com/adgdev_'} className='hover:text-green-500 duration-500' passHref legacyBehavior>
-                        <a target="_blank">
+                    <Link href={'https://x.com/adgdev_'} className='' passHref legacyBehavior>
+                        <a target="_blank" className='hover:text-green-500 duration-500'>
                             <FaSquareXTwitter />
                         </a>
                     </Link>
-                    <Link href={'https://www.instagram.com/adg.dev/'} className='hover:text-green-500 duration-500' passHref legacyBehavior>
-                        <a target="_blank">
+                    <Link href={'https://www.instagram.com/adg.dev/'} className='' passHref legacyBehavior>
+                        <a target="_blank" className='hover:text-green-500 duration-500'>
                             <FaInstagram />
                         </a>
                     </Link>
-                    <Link href={'https://web.facebook.com/adgdevfb/'} className='hover:text-green-500 duration-500' passHref legacyBehavior>
-                        <a target="_blank">
+                    <Link href={'https://web.facebook.com/adgdevfb/'} className='' passHref legacyBehavior>
+                        <a target="_blank" className='hover:text-green-500 duration-500'>
                             <FaFacebook />
                         </a>
                     </Link>
-                    <Link href={'https://www.tiktok.com/@adg.dev'} className='hover:text-green-500 duration-500' passHref legacyBehavior>
-                        <a target="_blank">
+                    <Link href={'https://www.tiktok.com/@adg.dev'} className='' passHref legacyBehavior>
+                        <a target="_blank" className='hover:text-green-500 duration-500'>
                             <FaTiktok />
                         </a>
                     </Link>
