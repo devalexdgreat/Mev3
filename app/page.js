@@ -8,6 +8,9 @@ import pjxThr from '@/public/project3.jpg';
 import pjxFor from '@/public/pjx3.jpg';
 import pjxFiv from '@/public/pjx5.jpg';
 import pjxSix from '@/public/project6.jpg';
+import userOne from '@/public/user1.jpeg';
+import userTwo from '@/public/user2.jpeg';
+import userThr from '@/public/user3.jpeg';
 import { GoArrowUpRight, GoInfo } from "react-icons/go";
 import { BsChevronRight } from "react-icons/bs";
 import { FaCss3Alt, FaGitAlt, FaGithub, FaHtml5, FaNodeJs, FaPhp, FaReact } from "react-icons/fa";
@@ -354,7 +357,7 @@ export default function Home() {
                 </div>
                 <div className="w-full flex items-center gap-2 mt-3">
                   <div className="h-10 w-10">
-                    <Image src={heroImg} className="h-full w-full object-cover rounded-full" alt="" />
+                    <Image src={userOne} className="h-full w-full object-cover rounded-full" alt="" />
                   </div>
                   <div>
                     <div><span>Arinze Onyebuchi</span></div>
@@ -366,11 +369,11 @@ export default function Home() {
             <div className="bg-green-500/30 p-2 rounded-md rotate-[2deg] shadow-green-500/10 shadow-lg mt-6 md:mt-0">
               <div className="border border-green-500/20 px-3 py-5 rounded-md">
                 <div>
-                  <span className="text-sm">Partnering with Alexander for the design of our Garnerly product and promotional video was an absolute pleasure. Emmanuel’s design sense is extraordinary, and he exceeded all expectations. From the initial sitemap through to the final designs, every step of the process was handled with precision and care. The communication was seamless, and deadlines were consistently met.</span>
+                  <span className="text-sm">Partnering with Alexander for the design of our Garnerly product and promotional video was an absolute pleasure. Alex&rsquo;s design sense is extraordinary, and he exceeded all expectations. From the initial sitemap through to the final designs, every step of the process was handled with precision and care. The communication was seamless, and deadlines were consistently met.</span>
                 </div>
                 <div className="w-full flex items-center gap-2 mt-3">
                   <div className="h-10 w-10">
-                    <Image src={heroImg} className="h-full w-full object-cover rounded-full" alt="" />
+                    <Image src={userTwo} className="h-full w-full object-cover rounded-full" alt="" />
                   </div>
                   <div>
                     <div><span>Benjamin Osemwengie</span></div>
@@ -382,11 +385,11 @@ export default function Home() {
             <div className="bg-green-500/30 p-2 rounded-md rotate-[358deg] shadow-green-500/10 shadow-lg mt-6 md:mt-0">
               <div className="border border-green-500/20 px-3 py-5 rounded-md">
                 <div>
-                  <span className="text-sm">Working with Ossai has been a game-changer. His ability to turn complex user needs into intuitive, beautifully crafted designs is outstanding. He consistently delivered on time, collaborated seamlessly, and brought a level of creativity that elevated every project. I highly recommend Ossai for any team!</span>
+                  <span className="text-sm">Working with Alexander has been a game-changer. His ability to turn complex user needs into intuitive, beautifully crafted designs is outstanding. He consistently delivered on time, collaborated seamlessly, and brought a level of creativity that elevated every project. I highly recommend Ossai for any team!</span>
                 </div>
                 <div className="w-full flex items-center gap-2 mt-3">
                   <div className="h-10 w-10">
-                    <Image src={heroImg} className="h-full w-full object-cover rounded-full" alt="" />
+                    <Image src={userThr} className="h-full w-full object-cover rounded-full" alt="" />
                   </div>
                   <div>
                     <div><span>Obose Iyoke</span></div>

@@ -51,7 +51,7 @@ export default function Navbar() {
                         </div>
                         <div className="w-full absolute bottom-0 right-0 mx-auto flex gap-5 flex-col py-2 left-0">
                             <h1 className="uppercase text-base">Socials</h1>
-                            <div className="flex gap-5 pb-16 justify-between">
+                            <div className="flex gap-5 pb-16 justify-between text-3xl">
                                 <Link href={'https://github.com/devalexdgreat'} onClick={toggleMenu} className='hover:text-green-500 duration-500' passHref legacyBehavior>
                                     <a target="_blank">
                                         <FaGithub />
