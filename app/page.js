@@ -244,7 +244,7 @@ export default function Home() {
           <motion.div 
           initial={{ y: 100, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
-          transition={{ delay: 0.8, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
+          transition={{ delay: 0.4, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
           className="flex justify-center items-center mt-6">
             <Link href={'#'} className="bg-green-500 py-1.5 px-6 rounded-md uppercase border-2 border-green-800">See more</Link>
           </motion.div>
