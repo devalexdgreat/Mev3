@@ -11,11 +11,12 @@ import pjxSix from '@/public/project6.jpg';
 import userOne from '@/public/user1.jpeg';
 import userTwo from '@/public/user2.jpeg';
 import userThr from '@/public/user3.jpeg';
+import { motion } from 'framer-motion';
 import { GoArrowUpRight, GoInfo } from "react-icons/go";
 import { BsChevronRight } from "react-icons/bs";
-import { FaCss3Alt, FaGitAlt, FaGithub, FaHtml5, FaNodeJs, FaPhp, FaReact } from "react-icons/fa";
+import { FaBootstrap, FaCss3Alt, FaFigma, FaGitAlt, FaGithub, FaHtml5, FaNodeJs, FaPhp, FaReact } from "react-icons/fa";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
-import { SiMongodb, SiPostman } from "react-icons/si";
+import { SiFramer, SiMongodb, SiPostman } from "react-icons/si";
 import { SiExpress } from "react-icons/si";
 import { TbApi } from "react-icons/tb";
 import { LuDot } from "react-icons/lu";
@@ -64,30 +65,54 @@ export default function Home() {
       <section className="w-full flex justify-center items-center pt-32 pb-16" id="adg">
         <div className="w-11/12 mx-auto flex flex-col md:flex-row items-center gap-6">
           <div className="w-full md:w-7/12">
-              <h1 className="text-lg md:text-2xl lg:text-4xl uppercase">
+              <motion.h1 
+              initial={{ y: 100, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ delay: 0.2, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
+              className="text-lg md:text-2xl lg:text-4xl uppercase">
                 I’m Great Alexander, a Fullstack Developer specializing in creating robust, scalable, and visually appealing web solutions.
-              </h1>
-              <div className="w-full flex gap-3 mt-5 md:mt-10 uppercase">
+              </motion.h1>
+              <motion.div 
+              initial={{ y: 100, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ delay: 0.3, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
+              className="w-full flex gap-3 mt-5 md:mt-10 uppercase">
                 <Link href={'#about'} className="bg-green-500 text-white py-1.5 px-6 rounded-md border-2 border-green-800 hover:bg-green-700 duration-500">About</Link>
                 <Link href={'#cta'} className="bg-green-500 text-white py-1.5 px-6 rounded-md border-2 border-green-800 hover:bg-green-700 duration-500">Let&rsquo;s Work</Link>
-              </div>
+              </motion.div>
           </div>
           <div className="w-full md:w-5/12 flex justify-center">
-            <div className="h-72 md:h-full w-full md:w-8/12 overflow-hidden rounded-md">
+            <motion.div 
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.4, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
+            className="h-72 md:h-full w-full md:w-8/12 overflow-hidden rounded-md">
               <Image src='/hero.jpg' height={1000} width={1000} className="scale-150 h-full w-full object-cover object-center rounded-md" alt="" />
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
 
       <section className="w-full py-16" id="pjx">
         <div className="w-11/12 mx-auto">
-          <div className="w-full flex gap-2 items-center">
+          <motion.div 
+          initial={{ x: 100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ delay: 0.2, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
+          className="w-full flex gap-2 items-center overflow-hidden">
             <div className="border py-3 border-green-500"></div>
-            <h1 className="mt-0.5 font-medium uppercase">Featured Projects</h1>
-          </div>
+            <motion.h1 
+            initial={{ x: 100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ delay: 0.2, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
+            className="mt-0.5 font-medium uppercase">Featured Projects</motion.h1>
+          </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-5">
-            <div className="w-full group">
+            <motion.div 
+            initial={{ x: 100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ delay: 0, duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+            className="w-full group">
               <div className="overflow-hidden rounded-md relative">
                 <Link href={'#'} className="absolute top-0 left-0 z-10 h-full w-full"></Link>
                 <Image src={pjxFiv} alt="" className="h-full w-full object-cover rounded-md scale-125 group-hover:scale-150 group-hover:cursor-pointer duration-500" />
@@ -104,8 +129,12 @@ export default function Home() {
                   </Link>
                 </div>
               </div>
-            </div>
-            <div className="w-full group">
+            </motion.div>
+            <motion.div 
+            initial={{ x: 100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ delay: 0.2, duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+            className="w-full group">
               <div className="overflow-hidden rounded-md relative">
                 <Link href={'#'} className="absolute top-0 left-0 z-10 h-full w-full"></Link>
                 <Image src={pjxFor} alt="" className="h-full w-full object-cover rounded-md scale-125 group-hover:scale-150 group-hover:cursor-pointer duration-500" />
@@ -122,8 +151,12 @@ export default function Home() {
                   </Link>
                 </div>
               </div>
-            </div>
-            <div className="w-full group">
+            </motion.div>
+            <motion.div 
+            initial={{ x: 100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ delay: 0.4, duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+            className="w-full group">
               <div className="overflow-hidden rounded-md relative">
                 <Link href={'#'} className="absolute top-0 left-0 z-10 h-full w-full"></Link>
                 <Image src={pjxOne} alt="" className="h-full w-full object-cover rounded-md scale-125 group-hover:scale-150 group-hover:cursor-pointer duration-500" />
@@ -140,8 +173,12 @@ export default function Home() {
                   </Link>
                 </div>
               </div>
-            </div>
-            <div className="w-full group">
+            </motion.div>
+            <motion.div 
+            initial={{ x: 100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ delay: 0.5, duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+            className="w-full group">
               <div className="overflow-hidden rounded-md relative">
                 <Link href={'#'} className="absolute top-0 left-0 z-10 h-full w-full"></Link>
                 <Image src={pjxSix} alt="" className="h-full w-full object-cover rounded-md scale-125 group-hover:scale-150 group-hover:cursor-pointer duration-500" />
@@ -158,8 +195,12 @@ export default function Home() {
                   </Link>
                 </div>
               </div>
-            </div>
-            <div className="w-full group">
+            </motion.div>
+            <motion.div 
+            initial={{ x: 100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ delay: 0.6, duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+            className="w-full group">
               <div className="overflow-hidden rounded-md relative">
                 <Link href={'#'} className="absolute top-0 left-0 z-10 h-full w-full"></Link>
                 <Image src={pjxTwo} alt="" className="h-full w-full object-cover rounded-md scale-125 group-hover:scale-150 group-hover:cursor-pointer duration-500" />
@@ -176,8 +217,12 @@ export default function Home() {
                   </Link>
                 </div>
               </div>
-            </div>
-            <div className="w-full group">
+            </motion.div>
+            <motion.div 
+            initial={{ x: 100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ delay: 0.7, duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+            className="w-full group">
               <div className="overflow-hidden rounded-md relative">
                 <Link href={'#'} className="absolute top-0 left-0 z-10 h-full w-full"></Link>
                 <Image src={pjxThr} alt="" className="h-full w-full object-cover rounded-md scale-125 group-hover:scale-150 group-hover:cursor-pointer duration-500" />
@@ -194,11 +239,15 @@ export default function Home() {
                   </Link>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
-          <div className="flex justify-center items-center mt-6">
+          <motion.div 
+          initial={{ y: 100, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.8, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
+          className="flex justify-center items-center mt-6">
             <Link href={'#'} className="bg-green-500 py-1.5 px-6 rounded-md uppercase border-2 border-green-800">See more</Link>
-          </div>
+          </motion.div>
         </div>
       </section>
 
@@ -236,7 +285,10 @@ export default function Home() {
                 <div className="flex flex-wrap gap-3 mb-6">
                   <FaHtml5 className="h-10 w-10 text-gray-200" />
                   <FaCss3Alt className="h-10 w-10 text-gray-200" />
+                  <FaBootstrap className="h-10 w-10 text-gray-200" />
                   <RiTailwindCssFill className="h-10 w-10 text-gray-200" />
+                  <SiFramer className="h-10 w-10 text-gray-200" />
+                  <FaFigma className="h-10 w-10 text-gray-200" />
                   <RiNextjsFill className="h-10 w-10 text-gray-200" />
                   <FaReact className="h-10 w-10 text-gray-200" />
                   <FaNodeJs className="h-10 w-10 text-gray-200" />
