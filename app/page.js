@@ -62,7 +62,7 @@ export default function Home() {
 
   return (
     <main className="overflow-hidden">
-      <section className="w-full flex justify-center items-center pt-32 pb-16" id="adg">
+      <section className="w-full flex justify-center items-center pt-32 pb-20" id="adg">
         <div className="w-11/12 mx-auto flex flex-col md:flex-row items-center gap-6">
           <div className="w-full md:w-7/12">
               <motion.h1 
@@ -93,12 +93,12 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="w-full py-16" id="pjx">
+      <section className="w-full py-20" id="pjx">
         <div className="w-11/12 mx-auto">
           <motion.div 
           initial={{ x: 100, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
-          transition={{ delay: 0.1, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
+          transition={{ delay: 0, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
           className="w-full flex gap-2 items-center overflow-hidden">
             <div className="border py-3 border-green-500"></div>
             <motion.h1 
@@ -109,8 +109,8 @@ export default function Home() {
           </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-5">
             <motion.div 
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.1, duration: 0.71, ease: [0.16, 1, 0.3, 1] }}
             className="w-full group">
               <div className="overflow-hidden rounded-md relative">
@@ -131,8 +131,8 @@ export default function Home() {
               </div>
             </motion.div>
             <motion.div 
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.2, duration: 0.71, ease: [0.16, 1, 0.3, 1] }}
             className="w-full group">
               <div className="overflow-hidden rounded-md relative">
@@ -153,8 +153,8 @@ export default function Home() {
               </div>
             </motion.div>
             <motion.div 
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.4, duration: 0.71, ease: [0.16, 1, 0.3, 1] }}
             className="w-full group">
               <div className="overflow-hidden rounded-md relative">
@@ -175,8 +175,8 @@ export default function Home() {
               </div>
             </motion.div>
             <motion.div 
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.5, duration: 0.71, ease: [0.16, 1, 0.3, 1] }}
             className="w-full group">
               <div className="overflow-hidden rounded-md relative">
@@ -197,8 +197,8 @@ export default function Home() {
               </div>
             </motion.div>
             <motion.div 
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.6, duration: 0.71, ease: [0.16, 1, 0.3, 1] }}
             className="w-full group">
               <div className="overflow-hidden rounded-md relative">
@@ -219,8 +219,8 @@ export default function Home() {
               </div>
             </motion.div>
             <motion.div 
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.7, duration: 0.71, ease: [0.16, 1, 0.3, 1] }}
             className="w-full group">
               <div className="overflow-hidden rounded-md relative">
@@ -251,7 +251,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="w-full py-16" id="about">
+      <section className="w-full py-20" id="about">
         <div className="w-11/12 mx-auto">
           <motion.div 
           initial={{ x: 100, opacity: 0 }}
@@ -315,8 +315,8 @@ export default function Home() {
                 <Link href={'#cta'} className="rounded-md py-1.5 px-6 border-green-800 border-2 bg-green-500 duration-500 hover:bg-green-600 uppercase">Let&rsquo;s Work</Link>
             </motion.div>
             <motion.div 
-            initial={{ x: 100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.1, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
             className="w-full md:w-6/12">
               <div className="w-full flex gap-2 items-center mb-5">
@@ -391,13 +391,13 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="w-full py-16" id="services">
+      <section className="w-full py-20" id="services">
         <div className="w-11/12 mx-auto flex flex-col">
-        <motion.div 
-          initial={{ x: 100, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          transition={{ delay: 0.1, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
-          className="w-full flex gap-2 items-center overflow-hidden">
+          <motion.div 
+            initial={{ x: 100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ delay: 0.1, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
+            className="w-full flex gap-2 items-center overflow-hidden">
             <div className="border py-3 border-green-500"></div>
             <motion.h1 
             initial={{ x: 100, opacity: 0 }}
@@ -405,29 +405,71 @@ export default function Home() {
             transition={{ delay: 0.1, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
             className="mt-0.5 font-medium uppercase">Services</motion.h1>
           </motion.div>
-          <div className="w-full md:w-6/12">
+          <div className="w-full">
             <div className="w-full flex flex-col text-3xl md:text-5xl pt-2">
-              <div className="border-b border-green-500 py-4 flex items-center gap-2 hover:text-green-500 duration-500 hover:cursor-pointer"><AiOutlineLayout />UI/UX Design</div>
-              <div className="border-b border-green-500 py-4 flex items-center gap-2 hover:text-green-500 duration-500 hover:cursor-pointer"><FiImage />Graphics Design</div>
-              <div className="border-b border-green-500 py-4 flex items-center gap-2 hover:text-green-500 duration-500 hover:cursor-pointer"><FiCode />Web Development</div>
-              <div className="border-b border-green-500 py-4 flex items-center gap-2 hover:text-green-500 duration-500 hover:cursor-pointer"><AiOutlineCloudServer />Backend Development</div>
-              <div className="border-b border-green-500 py-4 flex items-center gap-2 hover:text-green-500 duration-500 hover:cursor-pointer"><AiOutlineApi />Api Integration</div>
+              <motion.div 
+              initial={{ x: 100, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ delay: 0.1, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
+              className="border-b border-green-500 py-4 flex items-center gap-2 hover:text-green-500 duration-500 hover:cursor-pointer">
+                <AiOutlineLayout />UI/UX Design
+              </motion.div>
+              <motion.div 
+              initial={{ x: 100, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ delay: 0.1, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
+              className="border-b border-green-500 py-4 flex items-center gap-2 hover:text-green-500 duration-500 hover:cursor-pointer">
+                <FiImage />Graphics Design
+              </motion.div>
+              <motion.div 
+              initial={{ x: 100, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ delay: 0.1, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
+              className="border-b border-green-500 py-4 flex items-center gap-2 hover:text-green-500 duration-500 hover:cursor-pointer">
+                <FiCode />Web Development
+              </motion.div>
+              <motion.div 
+              initial={{ x: 100, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ delay: 0.1, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
+              className="border-b border-green-500 py-4 flex items-center gap-2 hover:text-green-500 duration-500 hover:cursor-pointer">
+                <AiOutlineCloudServer />Backend Development
+              </motion.div>
+              <motion.div 
+              initial={{ x: 100, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ delay: 0.1, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
+              className="border-b border-green-500 py-4 flex items-center gap-2 hover:text-green-500 duration-500 hover:cursor-pointer">
+                <AiOutlineApi />Api Integration
+              </motion.div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="w-full py-16">
+      <section className="w-full py-20">
         <div className="w-11/12 mx-auto">
-          <div className="w-full flex gap-2 items-center">
+          <motion.div 
+            initial={{ x: 100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ delay: 0.1, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
+            className="w-full flex gap-2 items-center overflow-hidden">
             <div className="border py-3 border-green-500"></div>
-            <h1 className="mt-0.5 font-medium uppercase">Words of appreciation</h1>
-          </div>
+            <motion.h1 
+            initial={{ x: 100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ delay: 0.1, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
+            className="mt-0.5 font-medium uppercase">Words of appreciation</motion.h1>
+          </motion.div>
           <div className="w-full mt-5 columns-1 md:columns-1 lg:columns-3 gap-40 md:gap-5">
-            <div className="bg-green-500/30 p-2 rounded-md rotate-[358deg] shadow-green-500/10 shadow-lg">
+            <motion.div
+            initial={{ y: 100, opacity: 0, rotate: 358 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
+            className="bg-green-500/30 p-2 rounded-md rotate-[358deg] shadow-green-500/10 shadow-lg">
               <div className="border border-green-500/20 px-3 py-5 rounded-md">
                 <div>
-                  <span className="text-sm">Alexander is an incredibly talented product designer with a keen eye. Working with him has been perfect because he is creative, collaborative and constantly exceeding my expectations, making him a valuable asset to any project. Highly recommended!</span>
+                  <span className="text-sm">Alexander is an incredibly talented developer with a keen eye. Working with him has been perfect because he is creative, collaborative and constantly exceeding my expectations, making him a valuable asset to any project. Highly recommended!</span>
                 </div>
                 <div className="w-full flex items-center gap-2 mt-3">
                   <div className="h-10 w-10">
@@ -439,8 +481,12 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="bg-green-500/30 p-2 rounded-md rotate-[2deg] shadow-green-500/10 shadow-lg mt-6 md:mt-0">
+            </motion.div>
+            <motion.div
+            initial={{ y: 100, opacity: 0, rotate: 2 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
+            className="bg-green-500/30 p-2 rounded-md rotate-[2deg] shadow-green-500/10 shadow-lg mt-6 md:mt-0">
               <div className="border border-green-500/20 px-3 py-5 rounded-md">
                 <div>
                   <span className="text-sm">Partnering with Alexander for the design of our Garnerly product and promotional video was an absolute pleasure. Alex&rsquo;s design sense is extraordinary, and he exceeded all expectations. From the initial sitemap through to the final designs, every step of the process was handled with precision and care. The communication was seamless, and deadlines were consistently met.</span>
@@ -455,8 +501,12 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="bg-green-500/30 p-2 rounded-md rotate-[358deg] shadow-green-500/10 shadow-lg mt-6 md:mt-0">
+            </motion.div>
+            <motion.div
+            initial={{ y: 100, opacity: 0, rotate: 358 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
+            className="bg-green-500/30 p-2 rounded-md rotate-[358deg] shadow-green-500/10 shadow-lg mt-6 md:mt-0">
               <div className="border border-green-500/20 px-3 py-5 rounded-md">
                 <div>
                   <span className="text-sm">Working with Alexander has been a game-changer. His ability to turn complex user needs into intuitive, beautifully crafted designs is outstanding. He consistently delivered on time, collaborated seamlessly, and brought a level of creativity that elevated every project. I highly recommend Ossai for any team!</span>
@@ -471,34 +521,54 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
 
-      <section className='w-full py-16'>
+      <section className='w-full py-20'>
         <div className="w-11/12 flex flex-col md:flex-row mx-auto">
-            <div className="w-full md:w-6/12">
-              <div className="w-full flex gap-2 items-center text-center md:text-left">
+            <motion.div 
+            initial={{ x: 100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ delay: 0.1, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
+            className="w-full md:w-6/12">
+              <motion.div 
+              initial={{ x: 100, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ delay: 0.1, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
+              className="w-full flex gap-2 items-center text-center md:text-left">
                 <div className="border py-3 px-0 md:px-0 md:py-12 border-green-500"></div>
                 <h1 className="uppercase font-medium md:text-8xl">FAQs</h1>
-              </div>
-            </div>
-            <div className="pt-5 md:pt-3 w-full md:w-6/12 flex flex-col gap-3">
+              </motion.div>
+            </motion.div>
+            <motion.div 
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.1, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
+            className="pt-5 md:pt-3 w-full md:w-6/12 flex flex-col gap-3">
               {data.map((item)=> (
                 <AccordionItem key={item.id} {...item} isExpanded={expandedId === item.id} onToggle={() => toggleExpand(item.id)}/>
               ))}
-            </div>
+            </motion.div>
         </div>
       </section>
 
-      <section className="w-full py-16" id="cta">
+      <section className="w-full py-20" id="cta">
         <div className="w-11/12 mx-auto">
-          <div className="w-full flex gap-2 items-center">
+          <motion.div 
+          initial={{ x: 100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ delay: 0.1, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
+          className="w-full flex gap-2 items-center">
             <div className="border py-3 border-green-500"></div>
             <h1 className="mt-0.5 font-medium uppercase">Get in touch</h1>
-          </div>
-          <div className="mt-5 w-full">
+          </motion.div>
+          <motion.div 
+          initial={{ x: 100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ delay: 0.1, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
+          className="mt-5 w-full">
             <div className="w-full md:w-6/12 flex flex-col">
               <h1 className="text-3xl uppercase">Need help with a project ?</h1>
               <span className="text-gray-500">Feel free to reach out if you&rsquo;d like to collaborate, need help with a project, or just want to connect. I&rsquo;m open to new opportunities and ideas.</span>
@@ -506,7 +576,7 @@ export default function Home() {
                 <Link href={'mailto:alex_dgeat001@protonmail.com'} className="bg-green-500 rounded-md py-1.5 px-6 uppercase border-2 border-green-800 duration-500 hover:bg-green-600">Let&rsquo;s Work</Link>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
     </main>
