@@ -39,7 +39,7 @@ function AccordionItem({title, content, isExpanded, onToggle}) {
   return (
     <div className={`bg-green-900 border-2 border-green-800 flex justify-center flex-col rounded-md overflow-hidden transition-all duration-500 py-4 group ${isExpanded ? "max-h-80" : "max-h-16" }`}>
       <div className="flex justify-between items-start pt-4 px-5 cursor-pointer" onClick={onToggle}>
-        <div className="uppercase font-medium">
+        <div className={`${isExpanded ? 'text-green-500' : 'text-white'} uppercase font-medium`}>
           {title}
         </div>
         <BsChevronRight className={`group-hover:translate-x-1 group-hover:text-green-500 transition-all duration-300 h-6 ${isExpanded ? "rotate-90 text-green-500" : "" }`} />
@@ -465,6 +465,7 @@ export default function Home() {
             <motion.div
             initial={{ y: 100, opacity: 0, rotate: 358 }}
             whileInView={{ y: 0, opacity: 1 }}
+            whileHover={{ scale: 1.1 }}
             transition={{ delay: 0, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
             className="bg-green-500/30 p-2 rounded-md rotate-[358deg] shadow-green-500/10 shadow-lg">
               <div className="border border-green-500/20 px-3 py-5 rounded-md">
@@ -485,6 +486,7 @@ export default function Home() {
             <motion.div
             initial={{ y: 100, opacity: 0, rotate: 2 }}
             whileInView={{ y: 0, opacity: 1 }}
+            whileHover={{ scale: 1.1 }}
             transition={{ delay: 0, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
             className="bg-green-500/30 p-2 rounded-md rotate-[2deg] shadow-green-500/10 shadow-lg mt-6 md:mt-0">
               <div className="border border-green-500/20 px-3 py-5 rounded-md">
@@ -505,6 +507,7 @@ export default function Home() {
             <motion.div
             initial={{ y: 100, opacity: 0, rotate: 358 }}
             whileInView={{ y: 0, opacity: 1 }}
+            whileHover={{ scale: 1.1 }}
             transition={{ delay: 0, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
             className="bg-green-500/30 p-2 rounded-md rotate-[358deg] shadow-green-500/10 shadow-lg mt-6 md:mt-0">
               <div className="border border-green-500/20 px-3 py-5 rounded-md">
@@ -573,7 +576,7 @@ export default function Home() {
               <h1 className="text-3xl uppercase">Need help with a project ?</h1>
               <span className="text-gray-500">Feel free to reach out if you&rsquo;d like to collaborate, need help with a project, or just want to connect. I&rsquo;m open to new opportunities and ideas.</span>
               <div className="w-full mt-5">
-                <Link href={'mailto:alex_dgeat001@protonmail.com'} className="bg-green-500 rounded-md py-1.5 px-6 uppercase border-2 border-green-800 duration-500 hover:bg-green-600">Let&rsquo;s Work</Link>
+                <Link href={'mailto:alex_dgeat001@protonmail.com'} className="bg-green-500 rounded-md py-1.5 px-6 uppercase border-2 border-green-800 duration-500 hover:bg-green-800 hover:border-green-700 hover:text-green-500">Let&rsquo;s Work</Link>
               </div>
             </div>
           </motion.div>
