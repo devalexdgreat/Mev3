@@ -98,20 +98,20 @@ export default function Home() {
           <motion.div 
           initial={{ x: 100, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
-          transition={{ delay: 0.2, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
+          transition={{ delay: 0.1, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
           className="w-full flex gap-2 items-center overflow-hidden">
             <div className="border py-3 border-green-500"></div>
             <motion.h1 
             initial={{ x: 100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
-            transition={{ delay: 0.2, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ delay: 0.1, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
             className="mt-0.5 font-medium uppercase">Featured Projects</motion.h1>
           </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-5">
             <motion.div 
             initial={{ x: 100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
-            transition={{ delay: 0, duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ delay: 0, duration: 0.71, ease: [0.16, 1, 0.3, 1] }}
             className="w-full group">
               <div className="overflow-hidden rounded-md relative">
                 <Link href={'#'} className="absolute top-0 left-0 z-10 h-full w-full"></Link>
@@ -133,7 +133,7 @@ export default function Home() {
             <motion.div 
             initial={{ x: 100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
-            transition={{ delay: 0.2, duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ delay: 0.2, duration: 0.71, ease: [0.16, 1, 0.3, 1] }}
             className="w-full group">
               <div className="overflow-hidden rounded-md relative">
                 <Link href={'#'} className="absolute top-0 left-0 z-10 h-full w-full"></Link>
@@ -155,7 +155,7 @@ export default function Home() {
             <motion.div 
             initial={{ x: 100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
-            transition={{ delay: 0.4, duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ delay: 0.4, duration: 0.71, ease: [0.16, 1, 0.3, 1] }}
             className="w-full group">
               <div className="overflow-hidden rounded-md relative">
                 <Link href={'#'} className="absolute top-0 left-0 z-10 h-full w-full"></Link>
@@ -177,7 +177,7 @@ export default function Home() {
             <motion.div 
             initial={{ x: 100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
-            transition={{ delay: 0.5, duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ delay: 0.5, duration: 0.71, ease: [0.16, 1, 0.3, 1] }}
             className="w-full group">
               <div className="overflow-hidden rounded-md relative">
                 <Link href={'#'} className="absolute top-0 left-0 z-10 h-full w-full"></Link>
@@ -199,7 +199,7 @@ export default function Home() {
             <motion.div 
             initial={{ x: 100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
-            transition={{ delay: 0.6, duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ delay: 0.6, duration: 0.71, ease: [0.16, 1, 0.3, 1] }}
             className="w-full group">
               <div className="overflow-hidden rounded-md relative">
                 <Link href={'#'} className="absolute top-0 left-0 z-10 h-full w-full"></Link>
@@ -221,7 +221,7 @@ export default function Home() {
             <motion.div 
             initial={{ x: 100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
-            transition={{ delay: 0.7, duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ delay: 0.7, duration: 0.71, ease: [0.16, 1, 0.3, 1] }}
             className="w-full group">
               <div className="overflow-hidden rounded-md relative">
                 <Link href={'#'} className="absolute top-0 left-0 z-10 h-full w-full"></Link>
@@ -244,7 +244,7 @@ export default function Home() {
           <motion.div 
           initial={{ y: 100, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
-          transition={{ delay: 0.4, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
+          transition={{ delay: 0, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
           className="flex justify-center items-center mt-6">
             <Link href={'#'} className="bg-green-500 py-1.5 px-6 rounded-md uppercase border-2 border-green-800">See more</Link>
           </motion.div>
@@ -253,10 +253,18 @@ export default function Home() {
 
       <section className="w-full py-16" id="about">
         <div className="w-11/12 mx-auto">
-          <div className="w-full flex gap-2 items-center">
+          <motion.div 
+          initial={{ x: 100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ delay: 0.1, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
+          className="w-full flex gap-2 items-center overflow-hidden">
             <div className="border py-3 border-green-500"></div>
-            <h1 className="mt-0.5 font-medium uppercase">About the Mind Behind the Code</h1><GoInfo className="text-green-500 hover:cursor-pointer" />
-          </div>
+            <motion.h1 
+            initial={{ x: 100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ delay: 0.1, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
+            className="mt-0.5 font-medium uppercase">About the Mind Behind the Code</motion.h1><GoInfo className="text-green-500 hover:cursor-pointer" />
+          </motion.div>
           <div className="mt-5 w-full flex flex-col md:flex-row gap-12 md:gap-3">
             <div className="w-full md:w-6/12">
                 <p>I’m a Fullstack Developer with 4 years of experience creating high-performance, user-centered web applications. Specializing in Next.js, React.js, Node.js, and MongoDB, I blend technical expertise with a passion for sleek, functional design.</p>
@@ -376,13 +384,19 @@ export default function Home() {
       </section>
 
       <section className="w-full py-16" id="services">
-        <div className="w-11/12 mx-auto flex flex-col md:flex-row">
-          <div className="w-full md:w-6/12">
-            <div className="w-full flex gap-2 items-center text-center md:text-left">
-              <div className="border py-3 px-0 md:px-0 md:py-12 border-green-500"></div>
-              <h1 className="uppercase font-medium md:text-8xl">Services</h1>
-            </div>
-          </div>
+        <div className="w-11/12 mx-auto flex flex-col">
+        <motion.div 
+          initial={{ x: 100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ delay: 0.1, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
+          className="w-full flex gap-2 items-center overflow-hidden">
+            <div className="border py-3 border-green-500"></div>
+            <motion.h1 
+            initial={{ x: 100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ delay: 0.1, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
+            className="mt-0.5 font-medium uppercase">Services</motion.h1>
+          </motion.div>
           <div className="w-full md:w-6/12">
             <div className="w-full flex flex-col text-3xl md:text-5xl pt-2">
               <div className="border-b border-green-500 py-4 flex items-center gap-2 hover:text-green-500 duration-500 hover:cursor-pointer"><AiOutlineLayout />UI/UX Design</div>
