@@ -109,9 +109,9 @@ export default function Home() {
           </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-5">
             <motion.div 
-            initial={{ x: 100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{ delay: 0, duration: 0.71, ease: [0.16, 1, 0.3, 1] }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.1, duration: 0.71, ease: [0.16, 1, 0.3, 1] }}
             className="w-full group">
               <div className="overflow-hidden rounded-md relative">
                 <Link href={'#'} className="absolute top-0 left-0 z-10 h-full w-full"></Link>
@@ -131,8 +131,8 @@ export default function Home() {
               </div>
             </motion.div>
             <motion.div 
-            initial={{ x: 100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
             transition={{ delay: 0.2, duration: 0.71, ease: [0.16, 1, 0.3, 1] }}
             className="w-full group">
               <div className="overflow-hidden rounded-md relative">
@@ -153,8 +153,8 @@ export default function Home() {
               </div>
             </motion.div>
             <motion.div 
-            initial={{ x: 100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
             transition={{ delay: 0.4, duration: 0.71, ease: [0.16, 1, 0.3, 1] }}
             className="w-full group">
               <div className="overflow-hidden rounded-md relative">
@@ -175,8 +175,8 @@ export default function Home() {
               </div>
             </motion.div>
             <motion.div 
-            initial={{ x: 100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 0.71, ease: [0.16, 1, 0.3, 1] }}
             className="w-full group">
               <div className="overflow-hidden rounded-md relative">
@@ -197,8 +197,8 @@ export default function Home() {
               </div>
             </motion.div>
             <motion.div 
-            initial={{ x: 100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
             transition={{ delay: 0.6, duration: 0.71, ease: [0.16, 1, 0.3, 1] }}
             className="w-full group">
               <div className="overflow-hidden rounded-md relative">
@@ -219,8 +219,8 @@ export default function Home() {
               </div>
             </motion.div>
             <motion.div 
-            initial={{ x: 100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
             transition={{ delay: 0.7, duration: 0.71, ease: [0.16, 1, 0.3, 1] }}
             className="w-full group">
               <div className="overflow-hidden rounded-md relative">
@@ -266,7 +266,11 @@ export default function Home() {
             className="mt-0.5 font-medium uppercase">About the Mind Behind the Code</motion.h1><GoInfo className="text-green-500 hover:cursor-pointer" />
           </motion.div>
           <div className="mt-5 w-full flex flex-col md:flex-row gap-12 md:gap-3">
-            <div className="w-full md:w-6/12">
+            <motion.div 
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.1, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
+            className="w-full md:w-6/12">
                 <p>I’m a Fullstack Developer with 4 years of experience creating high-performance, user-centered web applications. Specializing in Next.js, React.js, Node.js, and MongoDB, I blend technical expertise with a passion for sleek, functional design.</p>
                 <br/>
                 <p className="mb-5">Using tools like Framer Motion, GSAP, and Tailwind CSS, I deliver smooth animations and responsive, visually engaging interfaces that elevate brands and engage users.</p>
@@ -309,8 +313,12 @@ export default function Home() {
                   <SiPostman className="h-10 w-10 text-gray-200" />
                 </div>
                 <Link href={'#cta'} className="rounded-md py-1.5 px-6 border-green-800 border-2 bg-green-500 duration-500 hover:bg-green-600 uppercase">Let&rsquo;s Work</Link>
-            </div>
-            <div className="w-full md:w-6/12">
+            </motion.div>
+            <motion.div 
+            initial={{ x: 100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ delay: 0.1, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
+            className="w-full md:w-6/12">
               <div className="w-full flex gap-2 items-center mb-5">
                 <div className="border py-3 border-green-500"></div>
                 <h1 className="mt-0.5 font-medium uppercase">Work Experience</h1>
@@ -378,7 +386,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
